@@ -1,0 +1,14 @@
+uuid: 928eddc2-2c3b-45cc-be25-761f42769152
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.curator
+  module:
+    - user
+id: user_add_role_action.curator
+label: 'Add the curator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: curator

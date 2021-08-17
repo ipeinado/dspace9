@@ -1,0 +1,30 @@
+uuid: baf56c96-5726-44a6-a3b9-e803ed11aabc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.bb.body
+    - node.type.bb
+  module:
+    - text
+    - user
+id: node.bb.default
+targetEntityType: node
+bundle: bb
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

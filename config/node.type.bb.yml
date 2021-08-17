@@ -1,0 +1,17 @@
+uuid: 00f6fc56-5c9a-47b0-aece-e8d33865b10c
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Component
+type: bb
+description: 'Curated component listing  (description is not automatically imported, e.g. from github). Mostly code hosted on websites, etc.'
+help: "<p><em>This content type can be used by anyone to add reusable Code Snippets, Libraries, Open Source Software to the Developer Space that will help other developers build accessible and personalized technology easier and faster.</em></p>\r\n\r\n<p>\r\nAnyone can contribute listings of their own work or of interesting work they found on the web and/or used their own projects. Use the following template to provide:\r\n<ul>\r\n\t<li>One-liner explaining the purpose of the module as summary field</li>\r\n\t<li>Necessary background context &amp; links</li>\r\n\t<li>Clear, <em>runnable</em> example of usage</li>\r\n\t<li>Installation instructions</li>\r\n\t<li>API documentation with examples</li>\r\n        <li>Information Caveats and limitations</li>\r\n        <li>Information about licences</li>   \r\n       <li>Links to other resources such as tutorials and training material</li>\r\n</ul>\r\n\r\nIn order to allow other developers to access information efficiently you should:\r\n<ul>\r\n\t<li>perform <a href=\"https://github.com/noffle/art-of-readme#cognitive-funneling\">cognitive funneling</a></li>\r\n\t<li>not rely on images to relay critical information</li>\r\n</ul>\r\n</p>\r\n\r\n<p>Please carefully read our <a href=\"/terms\">Terms of Use </a>and the before submitting content. In keeping with our goal of providing free information to the widest possible audience, we require that when necessary all submitted content be licensed so that it is freely reusable by anyone who cares to access it. </p>\r\n\r\n"
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,12 +1,18 @@
 uuid: 72943b39-8a4a-4732-968a-f610b708be1f
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
 _core:
   default_config_hash: KuyA4NHPXcmKAjRtwa0vQc2ZcyrUJy6IlS2TAyMNRbc
-name: 'Basic page'
+name: Page
 type: page
-description: 'Use <em>basic pages</em> for your static content, such as an ''About us'' page.'
+description: 'Use <em>curated pages</em> for static content, such as quicksheets, services, success stories, R&D projects, demos, etc.'
 help: ''
 new_revision: true
 preview_mode: 1

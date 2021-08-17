@@ -1,22 +1,18 @@
-uuid: 95b951f7-d00e-48d9-b0f7-c41718cce079
+uuid: e449e039-105d-41d5-915e-d454fa1b796d
 langcode: en
 status: true
 dependencies: {  }
-_core:
-  default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
-id: anonymous
-label: 'anonymous user'
-weight: 0
-is_admin: false
+id: non_authenticated_user
+label: 'non-authenticated user'
+weight: 1
+is_admin: null
 permissions:
   - 'access content'
-  - 'access printer-friendly version'
   - 'access search search_api_page'
-  - 'diff view changes'
   - 'display EU Cookie Compliance popup'
   - 'download any image files'
-  - 'search content'
-  - 'use advanced search'
+  - 'flag upvote_challenge'
+  - 'unflag upvote_challenge'
   - 'use hybridauth'
   - 'use search_api_autocomplete for search_api_page_search'
   - 'view any basic_block bean'

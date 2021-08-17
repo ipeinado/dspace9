@@ -1,0 +1,14 @@
+uuid: ddf88b10-37b7-41c9-a70a-9aee4987096b
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.non_authenticated_user
+  module:
+    - user
+id: user_remove_role_action.non_authenticated_user
+label: 'Remove the non-authenticated user role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: non_authenticated_user

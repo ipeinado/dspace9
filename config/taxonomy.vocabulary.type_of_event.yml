@@ -1,0 +1,8 @@
+uuid: 7f22ed62-9856-4294-b0be-10e83d8a60c2
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type of Event'
+vid: type_of_event
+description: 'Different types of events in the field of accessibility'
+weight: 0

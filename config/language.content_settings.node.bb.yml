@@ -1,0 +1,11 @@
+uuid: 2d85fdca-37be-4a83-808a-aace3f73c60f
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.bb
+id: node.bb
+target_entity_type_id: node
+target_bundle: bb
+default_langcode: site_default
+language_alterable: false

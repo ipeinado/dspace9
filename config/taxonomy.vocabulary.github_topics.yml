@@ -1,0 +1,8 @@
+uuid: 8a455a5d-a6f5-4411-b3e6-f394a5f72dd7
+langcode: en
+status: true
+dependencies: {  }
+name: 'Github Repository Topics'
+vid: github_topics
+description: 'Topics as set for repositories on github'
+weight: 0

@@ -1,0 +1,8 @@
+uuid: 789544b4-1a58-4d9c-9ffe-a12fb404cc2a
+langcode: en
+status: true
+dependencies: {  }
+name: Topics
+vid: topics
+description: 'Taxonomy for organizing resources into big groups'
+weight: 0

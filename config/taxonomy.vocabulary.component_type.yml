@@ -1,0 +1,8 @@
+uuid: 3100c31e-8d5b-4421-8bc9-5266c6978993
+langcode: en
+status: true
+dependencies: {  }
+name: 'Component Type'
+vid: component_type
+description: 'Type of Component'
+weight: 0

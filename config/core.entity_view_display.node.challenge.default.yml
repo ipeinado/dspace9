@@ -1,0 +1,30 @@
+uuid: ecaf51c6-50aa-4506-b6cc-5e613b6c321b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.challenge.body
+    - node.type.challenge
+  module:
+    - text
+    - user
+id: node.challenge.default
+targetEntityType: node
+bundle: challenge
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  langcode: true
+  search_api_excerpt: true

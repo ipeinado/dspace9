@@ -1,0 +1,8 @@
+uuid: 30ff8184-423a-418a-9e95-bb4b4e036ecf
+langcode: en
+status: true
+dependencies: {  }
+name: 'Level of Support'
+vid: level_of_support
+description: 'Level of Support esp. regarding EN 301 549'
+weight: 0

@@ -1,0 +1,8 @@
+uuid: 916c76d9-1746-40ac-80e6-552c87e06b2f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Implementation Technologies'
+vid: implementation_technologies
+description: ''
+weight: 0

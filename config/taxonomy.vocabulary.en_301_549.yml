@@ -1,0 +1,8 @@
+uuid: 6dd1c867-a33d-421b-a8eb-b33e9bd107bf
+langcode: en
+status: true
+dependencies: {  }
+name: 'EN 301 549'
+vid: en_301_549
+description: 'Accessibility requirements suitable for public procurement of ICT products and services in Europe'
+weight: 0

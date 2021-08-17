@@ -1,0 +1,8 @@
+uuid: 7cc9bd55-55f4-4f65-a340-16d486c934ed
+langcode: en
+status: true
+dependencies: {  }
+name: 'Masterlist Techniques'
+vid: techniques
+description: 'Techniques, approaches and features that help increase accessibility'
+weight: 0

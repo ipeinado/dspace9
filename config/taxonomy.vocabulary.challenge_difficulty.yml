@@ -1,0 +1,8 @@
+uuid: b43bb38d-7383-41f7-944b-0de6d7fb076f
+langcode: en
+status: true
+dependencies: {  }
+name: 'Challenge difficulty'
+vid: challenge_difficulty
+description: 'Level of difficulty of the challenge'
+weight: 0
