@@ -1,0 +1,23 @@
+uuid: f8d48ff7-7869-4363-b71a-5976c431dd9b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_forks_count
+    - node.type.bb
+id: node.bb.field_forks_count
+field_name: field_forks_count
+entity_type: node
+bundle: bb
+label: 'Forks Count'
+description: 'Number of forks of the Github repository'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

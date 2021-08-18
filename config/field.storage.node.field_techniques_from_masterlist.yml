@@ -1,0 +1,20 @@
+uuid: 7937882e-c8f7-4ca5-903d-3d46bc82ac79
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_techniques_from_masterlist
+field_name: field_techniques_from_masterlist
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

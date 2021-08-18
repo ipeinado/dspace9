@@ -1,0 +1,29 @@
+uuid: 4f9790ad-8843-4b05-8a86-c0be04163b8b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_component_topics
+    - node.type.bb
+    - taxonomy.vocabulary.github_topics
+id: node.bb.field_component_topics
+field_name: field_component_topics
+entity_type: node
+bundle: bb
+label: Topics
+description: 'Topics as imported from Github'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      github_topics: github_topics
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: github_topics
+field_type: entity_reference

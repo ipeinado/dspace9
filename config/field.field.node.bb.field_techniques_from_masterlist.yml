@@ -1,0 +1,29 @@
+uuid: f97fa61e-93a4-4b1b-a9e3-90bbfa2af832
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_techniques_from_masterlist
+    - node.type.bb
+    - taxonomy.vocabulary.techniques
+id: node.bb.field_techniques_from_masterlist
+field_name: field_techniques_from_masterlist
+entity_type: node
+bundle: bb
+label: 'Techniques (from Masterlist)'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      techniques: techniques
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

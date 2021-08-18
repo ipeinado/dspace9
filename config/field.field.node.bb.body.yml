@@ -11,7 +11,7 @@ id: node.bb.body
 field_name: body
 entity_type: node
 bundle: bb
-label: Description
+label: Body
 description: ''
 required: false
 translatable: true

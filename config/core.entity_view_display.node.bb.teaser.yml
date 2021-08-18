@@ -5,6 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.bb.body
+    - field.field.node.bb.field_component_owner
+    - field.field.node.bb.field_component_topics
+    - field.field.node.bb.field_component_url
+    - field.field.node.bb.field_en_301_549_support
+    - field.field.node.bb.field_forks_count
+    - field.field.node.bb.field_pushed_at
+    - field.field.node.bb.field_stargazers_count
+    - field.field.node.bb.field_techniques_from_masterlist
+    - field.field.node.bb.field_updated_at
     - node.type.bb
   module:
     - text
@@ -28,5 +37,14 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
+  field_component_owner: true
+  field_component_topics: true
+  field_component_url: true
+  field_en_301_549_support: true
+  field_forks_count: true
+  field_pushed_at: true
+  field_stargazers_count: true
+  field_techniques_from_masterlist: true
+  field_updated_at: true
   langcode: true
   search_api_excerpt: true

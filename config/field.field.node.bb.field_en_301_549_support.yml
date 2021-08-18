@@ -1,0 +1,29 @@
+uuid: fd8b49a9-fc02-4f24-9d10-68e3e40e4a9d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_en_301_549_support
+    - node.type.bb
+    - taxonomy.vocabulary.en_301_549
+id: node.bb.field_en_301_549_support
+field_name: field_en_301_549_support
+entity_type: node
+bundle: bb
+label: 'EN 301 549 support'
+description: 'Please indicate if the computer implements any clauses from EN 301 549'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      en_301_549: en_301_549
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

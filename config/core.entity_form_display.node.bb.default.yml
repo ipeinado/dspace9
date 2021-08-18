@@ -4,8 +4,19 @@ status: true
 dependencies:
   config:
     - field.field.node.bb.body
+    - field.field.node.bb.field_component_owner
+    - field.field.node.bb.field_component_topics
+    - field.field.node.bb.field_component_url
+    - field.field.node.bb.field_en_301_549_support
+    - field.field.node.bb.field_forks_count
+    - field.field.node.bb.field_pushed_at
+    - field.field.node.bb.field_stargazers_count
+    - field.field.node.bb.field_techniques_from_masterlist
+    - field.field.node.bb.field_updated_at
     - node.type.bb
   module:
+    - datetime
+    - link
     - path
     - text
 id: node.bb.default
@@ -29,6 +40,78 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_component_owner:
+    weight: 127
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_component_topics:
+    weight: 130
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_component_url:
+    weight: 129
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_en_301_549_support:
+    weight: 122
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_forks_count:
+    weight: 123
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_pushed_at:
+    weight: 124
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_stargazers_count:
+    weight: 125
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_techniques_from_masterlist:
+    weight: 126
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_updated_at:
+    weight: 128
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
   langcode:
     type: language_select
     weight: 2

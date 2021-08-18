@@ -1,0 +1,21 @@
+uuid: 4dd80816-5534-48c6-a940-93cf9ca54cb2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pushed_at
+    - node.type.bb
+  module:
+    - datetime
+id: node.bb.field_pushed_at
+field_name: field_pushed_at
+entity_type: node
+bundle: bb
+label: 'Pushed At'
+description: '<em>pushed_at</em> will be updated any time a commit is pushed to any of the repository''s branches'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

@@ -1,0 +1,20 @@
+uuid: 8730be15-ee02-4a5a-8567-6321850bf6c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_en_301_549_support
+field_name: field_en_301_549_support
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,23 @@
+uuid: 84f26a90-ee08-4f07-896a-646504aae531
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_stargazers_count
+    - node.type.bb
+id: node.bb.field_stargazers_count
+field_name: field_stargazers_count
+entity_type: node
+bundle: bb
+label: 'Stargazers Count'
+description: 'Number of stars of the Repository (for Github repos)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

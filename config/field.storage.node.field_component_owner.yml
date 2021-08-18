@@ -1,0 +1,19 @@
+uuid: 41a9803a-09e3-42e1-95b5-d8fc17ff4e93
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_component_owner
+field_name: field_component_owner
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
