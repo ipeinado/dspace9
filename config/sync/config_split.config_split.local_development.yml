@@ -1,0 +1,16 @@
+uuid: 226bbd68-7ce5-4a69-9085-7b233c330324
+langcode: en
+status: true
+dependencies: {  }
+id: local_development
+label: 'Local Development'
+description: 'Configuration useful for local development'
+folder: ../config/development
+module:
+  devel: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0
