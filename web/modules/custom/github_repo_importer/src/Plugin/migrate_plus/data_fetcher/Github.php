@@ -5,7 +5,6 @@ namespace Drupal\github_repo_importer\Plugin\migrate_plus\data_fetcher;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\migrate\MigrateException;
 use Drupal\migrate_plus\DataFetcherPluginBase;
-// use GuzzleHttp\Exception\RequestException;
 use Github\Client;
 use Github\Exception\ErrorException;
 
@@ -18,10 +17,6 @@ use Github\Exception\ErrorException;
  * source:
  *   plugin: url
  *   data_fetcher_plugin: github
- *   api_call: starring or topic
- *   repository_info:
- *    - owner
- *    - name
  * @endcode
  *
  * @DataFetcher(
@@ -39,27 +34,22 @@ class Github extends DataFetcherPluginBase implements ContainerFactoryPluginInte
   protected $githubClient;
 
   /**
-   * Type of migration ("starring" or "topics")
-   * 
-   * @var str
-   */
-  protected $apiCall;
-
-  /**
-   * Repository information
-   * 
+   * The request headers.
+   *
    * @var array
    */
-  protected $repositoryInfo;
+  protected $headers = [];
 
   /**
    * {@inheritdoc}
    */
   public function __construct(array $configuration, $plugin_id, $plugin_definition) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
-    $this->githubClient = new \Github\Client();    
-    $this->apiCall = $this->configuration['api_call'][0];
-    $this->repositoryInfo = $this->configuration['repository_info'];
+    $this->githubClient = new \Github\Client();
+
+    // Ensure there is a 'headers' key in the configuration.
+    $configuration += ['headers' => []];
+    $this->setRequestHeaders($configuration['headers']);
   }
 
   /**
@@ -81,9 +71,9 @@ class Github extends DataFetcherPluginBase implements ContainerFactoryPluginInte
    */
   public function getResponse($url) {
     try {
-      
+
       $pat = \Drupal::config('github_repo_importer.adminsettings')->get('github_personal_access_token');
-    
+
       $this->githubClient->authenticate($pat, 'access_token_header');
 
       $detailed_repos = [];
@@ -91,14 +81,6 @@ class Github extends DataFetcherPluginBase implements ContainerFactoryPluginInte
       $starring_api = $this->githubClient->api('current_user')->starring();
       $paginator  = new \Github\ResultPager($this->githubClient);
       $response_paginated = $paginator->fetchAll($starring_api, 'all', array());
-
-      // var_dump($response_paginated[0]);
-
-      // foreach ($response_paginated as $simple_repo) {
-      //   $detailed_repo = $this->githubClient->api('repo')->show($simple_repo["owner"]["login"], $simple_repo["name"]);
-      //   $readme = $this->githubClient->api('repo')->contents()->readme($simple_repo["owner"]["login"], $simple_repo["name"], "reference");
-      //   array_push($detailed_repos, $detailed_repo);
-      // }
         
       $response = json_encode($response_paginated);
     

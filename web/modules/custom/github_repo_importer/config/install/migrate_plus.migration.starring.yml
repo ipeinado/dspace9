@@ -5,8 +5,10 @@ source:
   # We use the JSON source plugin
   plugin: url
   data_fetcher_plugin: github
-  
-  data_parser_plugin: json  
+  data_parser_plugin: json
+
+  urls:
+    - starring
 
   ids:
     id:

@@ -1,4 +1,4 @@
-uuid: 0a518c07-865c-4880-a84a-581dd7da11ca
+uuid: 51fea070-7874-4dfb-8a80-85db10163cb4
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - github_repo_importer
 _core:
-  default_config_hash: jFpbhv6ti3kGHHhyPrKwDjhX0Rj_tJNxIoJFsTL7vDM
+  default_config_hash: l3hT6SncgvdqLrklopwMHKtCtLM5zK3TaIJ8Nrg9LKo
 id: starring
 class: null
 field_plugin_method: null
@@ -18,6 +18,8 @@ source:
   plugin: url
   data_fetcher_plugin: github
   data_parser_plugin: json
+  urls:
+    - starring
   ids:
     id:
       type: integer
