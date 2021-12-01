@@ -1,0 +1,15 @@
+uuid: 88d51feb-f1c4-4d61-a65a-8e8f758f5ec9
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - github_repo_importer
+_core:
+  default_config_hash: dD5bX2NuUgxBUQsRfILQacp30MkQWrCRcB0rjLas-8U
+id: github
+label: 'Github API'
+description: 'Imports things from the Github API'
+source_type: url
+module: null
+shared_configuration: null

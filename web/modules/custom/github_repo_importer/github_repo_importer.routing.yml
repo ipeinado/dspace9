@@ -1,0 +1,9 @@
+github_repo_importer.admin_settings_form:
+  path: '/admin/config/github_repo_importer/adminsettings'
+  defaults:
+    _form: '\Drupal\github_repo_importer\Form\GithubPATForm'
+    _title: 'Github API Form'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

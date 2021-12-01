@@ -1,0 +1,173 @@
+id: starring
+label: Github repositories starred by dspace-projects
+migration_group: github
+source:
+  # We use the JSON source plugin
+  plugin: url
+  data_fetcher_plugin: github
+  
+  data_parser_plugin: json  
+
+  ids:
+    id:
+      type: integer
+    
+  item_selector: /
+
+  constants:
+    base_url: '/components/'
+  
+  fields:
+    -
+      name: id
+      label: 'Repository ID'
+      selector: id
+    -
+      name: name
+      label: 'Repository name'
+      selector: name
+    - 
+      name: description
+      label: 'Repository description'
+      selector: description
+    -
+      name: owner
+      label: 'Owner name'
+      selector: owner/login
+    -
+      name: owner_url
+      label: 'Owner URL'
+      selector: owner/url
+    -
+      name: url
+      label: 'Repository URL'
+      selector: html_url
+    -
+      name: stars
+      label: Stars
+      selector: stargazers_count
+    -
+      name: forks
+      label: 'Forks Count'
+      selector: forks_count
+    -
+      name: updated_at
+      label: 'Updated At'
+      selector: updated_at
+    -
+      name: pushed_at
+      label: 'Pushed at'
+      selector: pushed_at
+    -
+      name: license
+      label: License
+      selector: license/name
+    -
+      name: language
+      label: Language
+      selector: language
+    -
+      name: topics
+      label: Topics
+      selector: topics
+
+  high_water_property:
+    name: pushed_at
+    alias: p
+
+destination:
+  plugin: entity:node
+  default_bundle: bb
+
+  overwrite_properties:
+    - body
+    - field_license
+    - field_stargazers_count
+    - field_updated_at
+    - field_pushed_at
+    - field_forks_count
+    - field_topics
+
+process:
+  nid: id
+  title: name
+  
+  'body/format':
+    plugin: default_value
+    default_value: 'markdown'
+  'body/summary': description
+  'body/value': description
+    # -
+    #   plugin: get
+    #   source: readme
+    # -
+    #   plugin: callback
+    #   callable: base64_decode
+  
+  field_stargazers_count: stars
+  field_forks_count: forks
+  
+  field_license: license
+  
+  'field_component_owner/title': owner
+  'field_component_owner/uri': owner_url
+  
+  'field_component_url/uri': url
+  'field_component_url/title':
+    plugin: default_value
+    default_value: 'Go to repository'
+  
+  field_updated_at:
+    plugin: format_date
+    from_format: 'Y-m-d\TH:i:s\Z'
+    to_format: 'Y-m-d\TH:i:s'
+    timezone: 'GMT'
+    settings:
+      validate_format: true
+    source: updated_at
+  
+  field_pushed_at:
+    plugin: format_date
+    from_format: 'Y-m-d\TH:i:s\Z'
+    to_format: 'Y-m-d\TH:i:s'
+    timezone: 'GMT'
+    settings:
+      validate_format: true
+    source: pushed_at
+
+  field_language: language
+
+  uid:
+    plugin: default_value
+    default_value: 1
+
+  status:
+    plugin: default_value
+    default_value: 0
+
+  'path/pathauto':
+    plugin: default_value
+    default_value: 0 # Disable pathauto
+
+  'path/alias':
+    -
+      plugin: concat
+      source:
+        - constants/base_url
+        - name
+    -
+      plugin: urlencode
+  
+  field_component_topics:
+    -
+      plugin: entity_generate
+      source: topics
+      value_key: name
+      bundle_key: vid
+      bundle: github_topics
+      entity_type: taxonomy_term
+
+dependencies:
+  enforced:
+    module:
+      - github_repo_importer

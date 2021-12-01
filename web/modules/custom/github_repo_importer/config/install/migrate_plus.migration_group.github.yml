@@ -1,0 +1,9 @@
+id: github
+label: Github API
+description: Imports things from the Github API
+source_type: url
+
+dependencies:
+  enforced:
+    module:
+      - github_repo_importer

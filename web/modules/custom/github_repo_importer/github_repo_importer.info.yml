@@ -1,0 +1,17 @@
+name: Github repo importer
+description: Imports repositories from Github
+package: Custom
+
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+dependencies:
+  - drupal:migrate
+  - migrate_plus:migrate_plus
+  - node
+  - taxonomy
+
+enforced:
+    module:
+      - github_repo_importer

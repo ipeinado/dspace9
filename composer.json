@@ -11,6 +11,10 @@
         {
             "type": "path",
             "url": "upstream-configuration"
+        },
+        {
+            "type": "path",
+            "url": "web/modules/custom/*"
         }
     ],
     "require": {
@@ -27,7 +31,10 @@
         "drupal/simple_oauth": "^5.0",
         "drupal/upgrade_status": "^3.12",
         "drush/drush": "^10.5",
-        "pantheon-upstreams/upstream-configuration": "*"
+        "knplabs/github-api": "^3.0",
+        "nyholm/psr7": "^1.4",
+        "pantheon-upstreams/upstream-configuration": "*",
+        "symfony/http-client": "^5.4"
     },
     "conflict": {
             "drupal/drupal": "*"

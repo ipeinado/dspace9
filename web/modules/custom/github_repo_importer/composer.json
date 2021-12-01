@@ -1,0 +1,13 @@
+{
+    "name": "drupal/github_repo_importer",
+    "description": "Imports repos as components",
+    "type": "drupal-module",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ignacio Peinado",
+            "email": "i.peinado.martinez@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}

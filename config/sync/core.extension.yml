@@ -22,6 +22,7 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  github_repo_importer: 0
   hacked: 0
   help: 0
   history: 0
@@ -32,7 +33,6 @@ module:
   menu_ui: 0
   migrate: 0
   migrate_api: 0
-  migrate_drupal: 0
   migrate_plus: 0
   node: 0
   options: 0

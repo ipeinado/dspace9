@@ -1,0 +1,6 @@
+github_repo_importer.admin_settings_form:
+  title: 'Github API Configuration'
+  route_name: github_repo_importer.admin_settings_form
+  description: 'Configuration to use the Github API'
+  parent: system.admin_config_system
+  weight: 99
