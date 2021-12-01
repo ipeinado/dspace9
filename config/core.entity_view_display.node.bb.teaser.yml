@@ -10,7 +10,9 @@ dependencies:
     - field.field.node.bb.field_component_url
     - field.field.node.bb.field_en_301_549_support
     - field.field.node.bb.field_forks_count
+    - field.field.node.bb.field_license
     - field.field.node.bb.field_pushed_at
+    - field.field.node.bb.field_repo_id
     - field.field.node.bb.field_stargazers_count
     - field.field.node.bb.field_techniques_from_masterlist
     - field.field.node.bb.field_updated_at
@@ -42,7 +44,9 @@ hidden:
   field_component_url: true
   field_en_301_549_support: true
   field_forks_count: true
+  field_license: true
   field_pushed_at: true
+  field_repo_id: true
   field_stargazers_count: true
   field_techniques_from_masterlist: true
   field_updated_at: true

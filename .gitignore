@@ -132,3 +132,4 @@ upstream/web/
 #/.env
 
 .DS_Store
+/**/*/.DS_Store

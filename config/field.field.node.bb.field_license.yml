@@ -1,0 +1,19 @@
+uuid: ae4124b7-fb08-440b-b60f-f5618bb36fc4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_license
+    - node.type.bb
+id: node.bb.field_license
+field_name: field_license
+entity_type: node
+bundle: bb
+label: License
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

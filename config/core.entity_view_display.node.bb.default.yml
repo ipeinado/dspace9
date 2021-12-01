@@ -9,7 +9,9 @@ dependencies:
     - field.field.node.bb.field_component_url
     - field.field.node.bb.field_en_301_549_support
     - field.field.node.bb.field_forks_count
+    - field.field.node.bb.field_license
     - field.field.node.bb.field_pushed_at
+    - field.field.node.bb.field_repo_id
     - field.field.node.bb.field_stargazers_count
     - field.field.node.bb.field_techniques_from_masterlist
     - field.field.node.bb.field_updated_at
@@ -80,6 +82,14 @@ content:
     third_party_settings: {  }
     type: number_integer
     region: content
+  field_license:
+    weight: 112
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
   field_pushed_at:
     weight: 104
     label: above
@@ -88,6 +98,14 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
+    region: content
+  field_repo_id:
+    weight: 111
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
     region: content
   field_stargazers_count:
     weight: 105

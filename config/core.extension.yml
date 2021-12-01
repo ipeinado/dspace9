@@ -9,16 +9,19 @@ module:
   color: 0
   comment: 0
   config: 0
+  consumers: 0
   contact: 0
   contextual: 0
   datetime: 0
   dblog: 0
+  devel: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
+  hacked: 0
   help: 0
   history: 0
   image: 0
@@ -27,8 +30,9 @@ module:
   menu_link_content: 0
   menu_ui: 0
   migrate: 0
+  migrate_api: 0
   migrate_drupal: 0
-  migrate_drupal_ui: 0
+  migrate_plus: 0
   node: 0
   options: 0
   page_cache: 0
@@ -39,7 +43,9 @@ module:
   search: 0
   search_api: 0
   search_api_solr: 0
+  serialization: 0
   shortcut: 0
+  simple_oauth: 0
   standard: 0
   system: 0
   taxonomy: 0
@@ -47,6 +53,7 @@ module:
   toolbar: 0
   tour: 0
   update: 0
+  upgrade_status: 0
   user: 0
   views_ui: 0
   views: 10

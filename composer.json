@@ -15,10 +15,16 @@
     ],
     "require": {
         "drupal/backup_migrate": "^5.0",
+        "drupal/devel": "^4.1",
+        "drupal/entity_import": "^1.0@alpha",
+        "drupal/hacked": "^2.0@beta",
+        "drupal/migrate_api": "^1.2",
         "drupal/migrate_plus": "^5.1",
         "drupal/migrate_tools": "^5.0",
         "drupal/paragraphs": "^1.12",
         "drupal/search_api_solr": "^4.2",
+        "drupal/simple_oauth": "^5.0",
+        "drupal/upgrade_status": "^3.12",
         "drush/drush": "^10.5",
         "pantheon-upstreams/upstream-configuration": "*"
     },
