@@ -1,0 +1,16 @@
+uuid: e8c99ff9-971c-4821-83e5-4914a8174cce
+langcode: en
+status: true
+dependencies: {  }
+id: production
+label: Production
+description: 'Configuration for production'
+folder: ../config/production
+module: {  }
+theme: {  }
+blacklist:
+  - migrate_queue_importer.cron_migration.components_import
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true
+weight: 0

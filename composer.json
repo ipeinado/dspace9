@@ -25,7 +25,7 @@
         "drupal/hacked": "^2.0@beta",
         "drupal/migrate_api": "^1.2",
         "drupal/migrate_plus": "^5.1",
-        "drupal/migrate_tools": "^5.0",
+        "drupal/migrate_queue_importer": "^2.0",
         "drupal/paragraphs": "^1.12",
         "drupal/search_api_solr": "^4.2",
         "drupal/simple_oauth": "^5.0",
