@@ -39,4 +39,13 @@ if (getenv('IS_DDEV_PROJECT') == 'true' && is_readable($ddev_settings)) {
   require $ddev_settings;
 }
 
+$config['config_split.config_split.production']['status'] = FALSE;
+
 $settings['config_sync_directory'] = dirname(DRUPAL_ROOT) . '/config/sync';
+
+if (defined('PANTHEON_ENVIRONMENT')) {
+  if (PANTHEON_ENVIRONMENT == 'live') {
+    // Google Analytics.
+    $config['config_split.config_split.production']['status'] = TRUE;
+  }
+}
