@@ -19,6 +19,7 @@
     ],
     "require": {
         "drupal/backup_migrate": "^5.0",
+        "drupal/ckeditor_markdown": "^1.2",
         "drupal/config_split": "^1.7",
         "drupal/devel": "^4.1",
         "drupal/entity_import": "^1.0@alpha",
