@@ -44,9 +44,9 @@ module:
   path_alias: 0
   quickedit: 0
   rdf: 0
-  search: 0
   search_api: 0
   search_api_solr: 0
+  search_api_solr_admin: 0
   serialization: 0
   shortcut: 0
   simple_oauth: 0
