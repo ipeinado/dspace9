@@ -1,0 +1,8 @@
+uuid: 82ce448f-6bf9-4f6b-9757-b18bd679dd5e
+langcode: en
+status: true
+dependencies: {  }
+name: Functionality
+vid: functionality
+description: 'Describes the main functionality of a component'
+weight: 0

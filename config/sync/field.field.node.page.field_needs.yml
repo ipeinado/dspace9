@@ -1,0 +1,29 @@
+uuid: 59f83814-de73-4917-93b7-f4b31c96854d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_needs
+    - node.type.page
+    - taxonomy.vocabulary.needs
+id: node.page.field_needs
+field_name: field_needs
+entity_type: node
+bundle: page
+label: Needs
+description: 'Which users can benefit from this documentation or solution'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      needs: needs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 5182c296-61a4-4dfe-9b32-3795338843cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_page_category
+    - node.type.page
+    - taxonomy.vocabulary.categories
+id: node.page.field_page_category
+field_name: field_page_category
+entity_type: node
+bundle: page
+label: 'Page Category'
+description: 'Add a category to the page'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categories: categories
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

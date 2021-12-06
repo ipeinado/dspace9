@@ -1,0 +1,29 @@
+uuid: 82935dfb-0ae0-4df7-8cd9-ad207ff89312
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_main_functionality
+    - node.type.bb
+    - taxonomy.vocabulary.functionality
+id: node.bb.field_main_functionality
+field_name: field_main_functionality
+entity_type: node
+bundle: bb
+label: 'Main functionality'
+description: 'Describe the main purpose of the component or solution'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      functionality: functionality
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
