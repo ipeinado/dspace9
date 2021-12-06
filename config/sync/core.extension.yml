@@ -20,6 +20,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   field: 0
+  field_group: 0
   field_ui: 0
   file: 0
   filter: 0
@@ -28,6 +29,8 @@ module:
   help: 0
   history: 0
   image: 0
+  jquery_ui: 0
+  jquery_ui_accordion: 0
   language: 0
   link: 0
   menu_link_content: 0
@@ -65,7 +68,6 @@ theme:
   seven: 0
   bootstrap_barrio: 0
   gpii_ds: 0
-  claro: 0
 profile: standard
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

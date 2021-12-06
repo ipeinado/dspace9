@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 name: Categories
 vid: categories
-description: ''
+description: 'Categories for organizing pages'
 weight: 0

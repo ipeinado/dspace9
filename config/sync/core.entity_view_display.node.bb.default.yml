@@ -30,12 +30,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_component_owner:
-    weight: 107
+    weight: 7
     label: above
     settings:
       trim_length: 80
@@ -47,7 +47,7 @@ content:
     type: link
     region: content
   field_component_topics:
-    weight: 110
+    weight: 10
     label: above
     settings:
       link: true
@@ -55,7 +55,7 @@ content:
     type: entity_reference_label
     region: content
   field_component_url:
-    weight: 109
+    weight: 9
     label: above
     settings:
       trim_length: 80
@@ -67,7 +67,7 @@ content:
     type: link
     region: content
   field_en_301_549_support:
-    weight: 102
+    weight: 2
     label: above
     settings:
       link: true
@@ -75,7 +75,7 @@ content:
     type: entity_reference_label
     region: content
   field_forks_count:
-    weight: 103
+    weight: 3
     label: above
     settings:
       thousand_separator: ''
@@ -84,7 +84,7 @@ content:
     type: number_integer
     region: content
   field_license:
-    weight: 112
+    weight: 11
     label: above
     settings:
       link_to_entity: false
@@ -92,7 +92,7 @@ content:
     type: string
     region: content
   field_main_functionality:
-    weight: 113
+    weight: 14
     label: above
     settings:
       link: true
@@ -100,7 +100,7 @@ content:
     type: entity_reference_label
     region: content
   field_pushed_at:
-    weight: 104
+    weight: 4
     label: above
     settings:
       format_type: medium
@@ -109,7 +109,7 @@ content:
     type: datetime_default
     region: content
   field_repo_id:
-    weight: 111
+    weight: 13
     label: above
     settings:
       link_to_entity: false
@@ -117,7 +117,7 @@ content:
     type: string
     region: content
   field_stargazers_count:
-    weight: 105
+    weight: 5
     label: above
     settings:
       thousand_separator: ''
@@ -126,7 +126,7 @@ content:
     type: number_integer
     region: content
   field_techniques_from_masterlist:
-    weight: 106
+    weight: 6
     label: above
     settings:
       link: true
@@ -134,7 +134,7 @@ content:
     type: entity_reference_label
     region: content
   field_updated_at:
-    weight: 108
+    weight: 8
     label: above
     settings:
       format_type: medium
@@ -142,11 +142,19 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  langcode:
+    type: language
+    weight: 12
+    region: content
+    label: above
+    settings:
+      link_to_entity: false
+      native_language: false
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 0
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden:
-  langcode: true
   search_api_excerpt: true
