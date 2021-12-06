@@ -1,8 +1,0 @@
-uuid: 5bcaaae7-1430-47bc-a1ff-88fc6d71ea3f
-langcode: en
-status: true
-dependencies: {  }
-name: 'Type of external document'
-vid: reference_types
-description: 'Format of the documents referenced'
-weight: 0

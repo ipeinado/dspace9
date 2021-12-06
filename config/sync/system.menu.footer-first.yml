@@ -1,0 +1,8 @@
+uuid: fe1596c4-687f-4fba-aa6f-c0febf2ec318
+langcode: en
+status: true
+dependencies: {  }
+id: footer-first
+label: 'Footer First'
+description: 'First block of the footer menu'
+locked: false
