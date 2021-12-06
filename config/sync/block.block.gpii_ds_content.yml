@@ -1,0 +1,22 @@
+uuid: 2cc3208a-ebb0-42e5-96f1-d9018249c7f6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gpii_ds
+_core:
+  default_config_hash: QTwkfDaGeBUk6aerktJBDXso4fCsqLTQOuWKXE1xMPU
+id: gpii_ds_content
+theme: gpii_ds
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

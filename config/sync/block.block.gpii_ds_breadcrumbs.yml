@@ -1,0 +1,22 @@
+uuid: 33f65aba-6e2b-426c-a8b9-3a9c6f940e96
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gpii_ds
+_core:
+  default_config_hash: b6mUaCq5YPapRUABXRHfNTT6fxWIj5lgf0Mg4HaRJ_I
+id: gpii_ds_breadcrumbs
+theme: gpii_ds
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

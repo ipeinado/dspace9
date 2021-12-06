@@ -1,0 +1,20 @@
+uuid: 9a8fa0f2-a0c7-4535-bd21-69b56929cf26
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gpii_ds
+_core:
+  default_config_hash: gfXKmThltk6eewwrjAEaxVPxzPEVHV1UfNjjOUQ5A7g
+id: gpii_ds_page_title
+theme: gpii_ds
+region: header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

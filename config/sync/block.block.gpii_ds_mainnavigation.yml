@@ -1,0 +1,25 @@
+uuid: 6ac4d9a5-8b24-4057-b8ed-526a24ce92a8
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - gpii_ds
+id: gpii_ds_mainnavigation
+theme: gpii_ds
+region: primary_menu
+weight: -3
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
