@@ -1,0 +1,21 @@
+#navbar-top.navbar-light {
+  .nav-link {
+    color: $white;
+
+    &:hover {
+      color: rgba(255, 255, 255, .8);
+    }
+  }
+}
+
+.main-content {
+  a {
+    text-decoration: underline;
+  }
+}
+
+.site-footer {
+  .nav-link {
+    color: $white;
+  }
+}

@@ -25,6 +25,7 @@
         "drupal/config_split": "^1.7",
         "drupal/devel": "^4.1",
         "drupal/entity_import": "^1.0@alpha",
+        "drupal/extlink": "^1.6",
         "drupal/field_group": "^3.2",
         "drupal/fluidui": "^1.8",
         "drupal/hacked": "^2.0@beta",
