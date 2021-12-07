@@ -1,4 +1,4 @@
-uuid: 33f65aba-6e2b-426c-a8b9-3a9c6f940e96
+uuid: 0bd538d9-78dd-45ae-b0e4-604632d7e7c5
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - gpii_ds
 _core:
-  default_config_hash: b6mUaCq5YPapRUABXRHfNTT6fxWIj5lgf0Mg4HaRJ_I
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
 id: gpii_ds_breadcrumbs
 theme: gpii_ds
 region: breadcrumb
-weight: 0
+weight: -6
 provider: null
 plugin: system_breadcrumb_block
 settings:

@@ -1,4 +1,4 @@
-uuid: 2cc3208a-ebb0-42e5-96f1-d9018249c7f6
+uuid: 942d5977-bc46-4b92-a83e-cad5a56343b4
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - gpii_ds
 _core:
-  default_config_hash: QTwkfDaGeBUk6aerktJBDXso4fCsqLTQOuWKXE1xMPU
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
 id: gpii_ds_content
 theme: gpii_ds
 region: content
-weight: 0
+weight: -4
 provider: null
 plugin: system_main_block
 settings:

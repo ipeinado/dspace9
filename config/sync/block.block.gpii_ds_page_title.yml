@@ -1,15 +1,15 @@
-uuid: 9a8fa0f2-a0c7-4535-bd21-69b56929cf26
+uuid: e8d48afe-5bc6-4c6c-9c25-c5781d66ef48
 langcode: en
 status: true
 dependencies:
   theme:
     - gpii_ds
 _core:
-  default_config_hash: gfXKmThltk6eewwrjAEaxVPxzPEVHV1UfNjjOUQ5A7g
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
 id: gpii_ds_page_title
 theme: gpii_ds
-region: header
-weight: -5
+region: content
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

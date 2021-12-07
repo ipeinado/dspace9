@@ -1,0 +1,22 @@
+uuid: dfd37b10-003f-4115-ab4d-2b428c08adbd
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gpii_ds
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: gpii_ds_powered
+theme: gpii_ds
+region: footer_fifth
+weight: -6
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

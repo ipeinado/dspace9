@@ -20,11 +20,13 @@
     "require": {
         "drupal/backup_migrate": "^5.0",
         "drupal/bootstrap_barrio": "^5.5",
+        "drupal/bootstrap_sass": "^5.0",
         "drupal/ckeditor_markdown": "^1.2",
         "drupal/config_split": "^1.7",
         "drupal/devel": "^4.1",
         "drupal/entity_import": "^1.0@alpha",
         "drupal/field_group": "^3.2",
+        "drupal/fluidui": "^1.8",
         "drupal/hacked": "^2.0@beta",
         "drupal/jquery_ui_accordion": "^1.1",
         "drupal/migrate_api": "^1.2",

@@ -64,8 +64,12 @@ module:
   user: 0
   views_ui: 0
   views: 10
+  fluidui: 400
 theme:
   seven: 0
+  bartik: 0
+  stable: 0
+  classy: 0
   bootstrap_barrio: 0
   gpii_ds: 0
 profile: standard

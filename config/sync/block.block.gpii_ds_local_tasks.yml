@@ -1,0 +1,22 @@
+uuid: 17b4d156-df02-4ade-8ce8-e17987141908
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gpii_ds
+_core:
+  default_config_hash: qHdtze2DZ2mFfaJadxjZz6epm92_SN9SAFY4yJGl8Fo
+id: gpii_ds_local_tasks
+theme: gpii_ds
+region: content
+weight: -5
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

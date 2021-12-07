@@ -1,4 +1,4 @@
-uuid: 07ea95d2-438c-4a4a-b4f5-49077428d08d
+uuid: ba590666-01d2-4147-84e4-b79924e306fc
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - gpii_ds
 _core:
-  default_config_hash: iIy-YIc9d9s1isAtTIKWDBKd6kd2r6LxoYz_-hkLJco
+  default_config_hash: 9RnnTUBcn0WRWXfrGOnId2H0Q31uQUeu_F5TnDxl2yg
 id: gpii_ds_messages
 theme: gpii_ds
 region: highlighted
-weight: 0
+weight: -5
 provider: null
 plugin: system_messages_block
 settings:

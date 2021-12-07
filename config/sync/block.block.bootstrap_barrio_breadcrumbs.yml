@@ -1,4 +1,4 @@
-uuid: 07553eea-9554-4860-8599-8cb93504944d
+uuid: 5775038d-ff98-46d7-98e1-a8f1fbf4fda4
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   theme:
     - bootstrap_barrio
 _core:
-  default_config_hash: b6mUaCq5YPapRUABXRHfNTT6fxWIj5lgf0Mg4HaRJ_I
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
 id: bootstrap_barrio_breadcrumbs
 theme: bootstrap_barrio
-region: breadcrumb
-weight: 0
+region: header
+weight: -100
 provider: null
 plugin: system_breadcrumb_block
 settings:

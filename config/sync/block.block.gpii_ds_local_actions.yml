@@ -1,15 +1,15 @@
-uuid: 0280a134-78df-4876-8b20-5c8d43b0df1b
+uuid: 47cb45d2-883d-4871-a449-d11f6c92bc9d
 langcode: en
 status: true
 dependencies:
   theme:
     - gpii_ds
 _core:
-  default_config_hash: osZQ9lL2jTdH5am4LJiZ29RaivhzOf6vCpoRy6FZwIE
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
 id: gpii_ds_local_actions
 theme: gpii_ds
-region: content
-weight: -10
+region: header
+weight: -6
 provider: null
 plugin: local_actions_block
 settings:
