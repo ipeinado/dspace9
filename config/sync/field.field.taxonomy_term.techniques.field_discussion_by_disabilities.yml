@@ -1,0 +1,37 @@
+uuid: 5177b75c-9ef7-439b-ac44-f6c2f05d8fbc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_discussion_by_disabilities
+    - paragraphs.paragraphs_type.discussion_by_disabilities
+    - taxonomy.vocabulary.techniques
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.techniques.field_discussion_by_disabilities
+field_name: field_discussion_by_disabilities
+entity_type: taxonomy_term
+bundle: techniques
+label: 'Discussion by Disabilities'
+description: 'This section explains how users with different needs can benefit from this technique. Please add a discussion for each of the needs you select.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      discussion_by_disabilities: discussion_by_disabilities
+    target_bundles_drag_drop:
+      discussion_by_disabilities:
+        enabled: true
+        weight: 4
+      from_library:
+        weight: 5
+        enabled: false
+      section:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions

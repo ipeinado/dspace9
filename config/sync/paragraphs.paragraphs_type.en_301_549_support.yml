@@ -1,0 +1,9 @@
+uuid: 237854d5-54bf-4db9-823f-1b3a562e04e5
+langcode: en
+status: true
+dependencies: {  }
+id: en_301_549_support
+label: 'EN 301 549 support'
+icon_uuid: null
+description: 'Describes the level of support to specific clauses of EN 301 549'
+behavior_plugins: {  }

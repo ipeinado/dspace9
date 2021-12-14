@@ -1,0 +1,33 @@
+uuid: 4114b4c0-d353-4f7f-a0da-6728bf96e314
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.discussion_by_disabilities.field_discussion
+    - field.field.paragraph.discussion_by_disabilities.field_needs
+    - paragraphs.paragraphs_type.discussion_by_disabilities
+  module:
+    - text
+id: paragraph.discussion_by_disabilities.default
+targetEntityType: paragraph
+bundle: discussion_by_disabilities
+mode: default
+content:
+  field_discussion:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_needs:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

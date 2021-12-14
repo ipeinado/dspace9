@@ -1,0 +1,30 @@
+uuid: 41043eb5-7102-47dc-a6df-9112968960b4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.en_301_549.field_id
+    - taxonomy.vocabulary.en_301_549
+  module:
+    - text
+id: taxonomy_term.en_301_549.default
+targetEntityType: taxonomy_term
+bundle: en_301_549
+mode: default
+content:
+  description:
+    type: text_default
+    weight: 0
+    region: content
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+  field_id:
+    weight: 2
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

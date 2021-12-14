@@ -1,0 +1,23 @@
+uuid: 2c9fff92-40aa-4d00-a707-759ef0cec806
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_how_to_meet
+    - taxonomy.vocabulary.wcag_2_1
+  module:
+    - link
+id: taxonomy_term.wcag_2_1.field_how_to_meet
+field_name: field_how_to_meet
+entity_type: taxonomy_term
+bundle: wcag_2_1
+label: 'How to meet'
+description: 'External link to the W3C page with instructions about  how to meet this recommendation'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 2
+field_type: link

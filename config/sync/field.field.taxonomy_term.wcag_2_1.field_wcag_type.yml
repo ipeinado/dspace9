@@ -1,0 +1,29 @@
+uuid: ac2a69d2-6660-4093-be6e-9d9840caa3f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_wcag_type
+    - taxonomy.vocabulary.wcag2_1_type
+    - taxonomy.vocabulary.wcag_2_1
+id: taxonomy_term.wcag_2_1.field_wcag_type
+field_name: field_wcag_type
+entity_type: taxonomy_term
+bundle: wcag_2_1
+label: Type
+description: 'Select the type of recommendation: principle, guideline or success criterion'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      wcag2_1_type: wcag2_1_type
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

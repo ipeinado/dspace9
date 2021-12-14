@@ -1,0 +1,32 @@
+uuid: d1d5ef18-ad8f-4124-ab47-a68051c382f3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.en_301_549_support.field_en_301_549_clause
+    - field.field.paragraph.en_301_549_support.field_level_of_support
+    - paragraphs.paragraphs_type.en_301_549_support
+id: paragraph.en_301_549_support.default
+targetEntityType: paragraph
+bundle: en_301_549_support
+mode: default
+content:
+  field_en_301_549_clause:
+    weight: 1
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_level_of_support:
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,21 @@
+uuid: 31166546-e4c3-4b15-91c0-61e19dfc93e5
+langcode: en
+status: true
+dependencies:
+  module:
+    - entity_reference_revisions
+    - paragraphs
+    - taxonomy
+id: taxonomy_term.field_discussion_by_disabilities
+field_name: field_discussion_by_disabilities
+entity_type: taxonomy_term
+type: entity_reference_revisions
+settings:
+  target_type: paragraph
+module: entity_reference_revisions
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

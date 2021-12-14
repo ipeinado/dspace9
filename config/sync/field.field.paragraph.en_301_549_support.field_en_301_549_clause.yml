@@ -1,0 +1,29 @@
+uuid: d744f3f3-e729-4906-96dc-1a74ac671da2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_en_301_549_clause
+    - paragraphs.paragraphs_type.en_301_549_support
+    - taxonomy.vocabulary.en_301_549
+id: paragraph.en_301_549_support.field_en_301_549_clause
+field_name: field_en_301_549_clause
+entity_type: paragraph
+bundle: en_301_549_support
+label: 'EN 301 549 Clause'
+description: 'Select the clause from EN 301 549.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      en_301_549: en_301_549
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

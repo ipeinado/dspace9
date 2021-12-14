@@ -1,0 +1,75 @@
+uuid: 67859b78-406a-4718-8a61-2d900bc93177
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.wcag_2_1.field_how_to_meet
+    - field.field.taxonomy_term.wcag_2_1.field_number
+    - field.field.taxonomy_term.wcag_2_1.field_understanding
+    - field.field.taxonomy_term.wcag_2_1.field_wcag_level
+    - field.field.taxonomy_term.wcag_2_1.field_wcag_type
+    - taxonomy.vocabulary.wcag_2_1
+  module:
+    - link
+    - text
+id: taxonomy_term.wcag_2_1.default
+targetEntityType: taxonomy_term
+bundle: wcag_2_1
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_how_to_meet:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_number:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_understanding:
+    weight: 4
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_wcag_level:
+    weight: 3
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_wcag_type:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+hidden: {  }

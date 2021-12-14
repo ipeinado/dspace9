@@ -1,0 +1,37 @@
+uuid: 5c1147ea-53aa-4fba-a428-1edf32373008
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_related_research
+    - paragraphs.paragraphs_type.section
+    - taxonomy.vocabulary.techniques
+  module:
+    - entity_reference_revisions
+id: taxonomy_term.techniques.field_related_research
+field_name: field_related_research
+entity_type: taxonomy_term
+bundle: techniques
+label: 'Related Research and Papers'
+description: 'Is there any research or papers describing how the application of this technique can help users?'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      section: section
+    target_bundles_drag_drop:
+      discussion_by_disabilities:
+        weight: 4
+        enabled: false
+      from_library:
+        weight: 5
+        enabled: false
+      section:
+        enabled: true
+        weight: 6
+field_type: entity_reference_revisions

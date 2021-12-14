@@ -1,0 +1,29 @@
+uuid: c778660e-bdd1-4063-9451-cc123adae327
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_wcag_level
+    - taxonomy.vocabulary.wcag21_levels
+    - taxonomy.vocabulary.wcag_2_1
+id: taxonomy_term.wcag_2_1.field_wcag_level
+field_name: field_wcag_level
+entity_type: taxonomy_term
+bundle: wcag_2_1
+label: Level
+description: 'Level of the recommendation (A, AA, AAA)'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      wcag21_levels: wcag21_levels
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

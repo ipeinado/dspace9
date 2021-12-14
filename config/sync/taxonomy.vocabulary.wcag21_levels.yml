@@ -1,0 +1,8 @@
+uuid: 53775fd1-295b-48e0-921b-3d8e5a9748aa
+langcode: en
+status: true
+dependencies: {  }
+name: 'WCAG21 Levels'
+vid: wcag21_levels
+description: 'Conformance requirements'
+weight: 0

@@ -1,0 +1,29 @@
+uuid: 757cf4b7-11a4-4fda-874a-bdb9d6b855fa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_level_of_support
+    - paragraphs.paragraphs_type.en_301_549_support
+    - taxonomy.vocabulary.level_of_support
+id: paragraph.en_301_549_support.field_level_of_support
+field_name: field_level_of_support
+entity_type: paragraph
+bundle: en_301_549_support
+label: 'Level of Support'
+description: "● <strong>L1: Background information</strong>: An item provides background information on disabilities, barriers in technologies, or how AT helps to overcome these barriers. The item can also be a piece of AT (software, hardware, or documentation) which can be used by a\r\ndeveloper to get a feeling about barriers and how to overcome them with AT, and to test their product for compatibility with this piece of AT.\r\n● <strong>L2: Guidance/Tool</strong>: An item provides guidance in how to comply to an EN provision, but not in sufficient detail so that a developer could carry out the necessary steps without other sources of information. This level of support also applies to test tools (or documentation for them) that can assist in checking for compliance to one or multiple EN provisions. This includes tools that check for compliance in an automatic or semi-automatic manner.\r\n● <strong>L3: Partial Fulfillment</strong>: An item provides detailed instructions on how to comply with an EN provision, but this will only result in a partial fulfillment of the provision. In addition, other measures need to be taken to fully comply with the provision. This level of support resembles that of the “Advisory Techniques” in WCAG 2.0.\r\n● <strong>L4: Full Fulfillment</strong>: An item provides detailed instructions on how to comply with an EN provision, and by doing so this will result in a full fulfillment of the provision. This level of support resembles that of the “Sufficient Techniques” in WCAG 2.0."
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      level_of_support: level_of_support
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

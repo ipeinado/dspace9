@@ -1,0 +1,14 @@
+uuid: 112b865b-cae6-459a-9bca-5866ec226b01
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: discussion_by_disabilities
+label: 'Discussion by Disabilities (Benefits and Preferred Behaviors)'
+icon_uuid: null
+description: 'Please state how this technique might benefit users with different behaviors'
+behavior_plugins: {  }

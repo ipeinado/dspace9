@@ -19,6 +19,8 @@ module:
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
+  entity_reference_revisions: 0
+  entity_usage: 0
   field: 0
   field_group: 0
   field_ui: 0
@@ -32,6 +34,7 @@ module:
   jquery_ui: 0
   jquery_ui_accordion: 0
   language: 0
+  layout_discovery: 0
   link: 0
   menu_link_content: 0
   menu_ui: 0
@@ -43,6 +46,7 @@ module:
   node: 0
   options: 0
   page_cache: 0
+  paragraphs_library: 0
   path: 0
   path_alias: 0
   quickedit: 0
@@ -64,7 +68,10 @@ module:
   user: 0
   views_ui: 0
   extlink: 1
+  ds: 1
+  ds_extras: 2
   views: 10
+  paragraphs: 11
   fluidui: 400
 theme:
   seven: 0

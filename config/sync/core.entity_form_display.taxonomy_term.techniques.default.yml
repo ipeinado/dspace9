@@ -1,0 +1,97 @@
+uuid: 9520f808-6e8c-4b7e-97a4-2f68cee44175
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.techniques.field_discussion_by_disabilities
+    - field.field.taxonomy_term.techniques.field_existing_products
+    - field.field.taxonomy_term.techniques.field_related_research
+    - taxonomy.vocabulary.techniques
+  module:
+    - paragraphs
+    - path
+    - text
+id: taxonomy_term.techniques.default
+targetEntityType: taxonomy_term
+bundle: techniques
+mode: default
+content:
+  description:
+    type: text_textarea
+    weight: 0
+    region: content
+    settings:
+      placeholder: ''
+      rows: 5
+    third_party_settings: {  }
+  field_discussion_by_disabilities:
+    type: paragraphs
+    weight: 1
+    settings:
+      title: 'Add new user need'
+      title_plural: 'Add more user needs'
+      edit_mode: open
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: discussion_by_disabilities
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    region: content
+  field_existing_products:
+    type: paragraphs
+    weight: 2
+    settings:
+      title: 'Add Existing Products'
+      title_plural: 'Add Existing Products (plural)'
+      edit_mode: open
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: section
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+    third_party_settings: {  }
+    region: content
+  field_related_research:
+    type: paragraphs
+    weight: 3
+    settings:
+      title: 'Related Research and Papers'
+      title_plural: 'Related Research and Papers'
+      edit_mode: open
+      closed_mode: preview
+      autocollapse: none
+      closed_mode_threshold: 0
+      add_mode: button
+      form_display_mode: default
+      default_paragraph_type: section
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
+        add_above: '0'
+    third_party_settings: {  }
+    region: content
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

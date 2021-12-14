@@ -1,0 +1,72 @@
+uuid: 1a062e36-4ab8-4094-9c6a-04a446ad907c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.discussion_by_disabilities.field_discussion
+    - field.field.paragraph.discussion_by_disabilities.field_needs
+    - paragraphs.paragraphs_type.discussion_by_disabilities
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings: {  }
+    regions:
+      content:
+        - field_needs
+        - field_discussion
+id: paragraph.discussion_by_disabilities.default
+targetEntityType: paragraph
+bundle: discussion_by_disabilities
+mode: default
+content:
+  field_discussion:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_needs:
+    weight: 0
+    label: hidden
+    settings:
+      link: false
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            prefix: ''
+            lbw-el: h3
+            lbw-cl: ''
+            lbw-at: ''
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fi: true
+            fi-el: h3
+            fi-cl: ''
+            fi-at: ''
+            suffix: ''
+            lbw: false
+            lb-col: false
+            ow: false
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-def-at: false
+            fi-def-at: false
+    type: entity_reference_label
+    region: content
+hidden: {  }

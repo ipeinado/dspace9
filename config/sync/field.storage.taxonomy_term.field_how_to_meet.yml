@@ -1,0 +1,19 @@
+uuid: ea5917e2-0beb-4353-b4e8-45ad00f5df63
+langcode: en
+status: true
+dependencies:
+  module:
+    - link
+    - taxonomy
+id: taxonomy_term.field_how_to_meet
+field_name: field_how_to_meet
+entity_type: taxonomy_term
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

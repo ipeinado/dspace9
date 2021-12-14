@@ -1,0 +1,19 @@
+uuid: e9092074-b6d7-4d53-b61e-fb132214b2f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_id
+    - taxonomy.vocabulary.en_301_549
+id: taxonomy_term.en_301_549.field_id
+field_name: field_id
+entity_type: taxonomy_term
+bundle: en_301_549
+label: Id
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

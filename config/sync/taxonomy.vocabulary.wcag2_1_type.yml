@@ -1,0 +1,8 @@
+uuid: 1a75fdd0-0a65-4431-8377-028ae99a4a3f
+langcode: en
+status: true
+dependencies: {  }
+name: 'WCAG2.1 Layers of Guidance'
+vid: wcag2_1_type
+description: 'Layers of guidance include overall principles, general guidelines, testable success criteria and techniques'
+weight: 0

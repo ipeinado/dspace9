@@ -1,0 +1,29 @@
+uuid: 3af7d9da-70bb-4f1c-8443-0e395922831e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_needs
+    - paragraphs.paragraphs_type.discussion_by_disabilities
+    - taxonomy.vocabulary.needs
+id: paragraph.discussion_by_disabilities.field_needs
+field_name: field_needs
+entity_type: paragraph
+bundle: discussion_by_disabilities
+label: 'Addressed end user needs'
+description: 'Select a need'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      needs: needs
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

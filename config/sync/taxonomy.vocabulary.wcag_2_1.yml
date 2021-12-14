@@ -1,0 +1,8 @@
+uuid: 0478b337-3ca1-4a8e-8b31-6ff5aa74dbbf
+langcode: en
+status: true
+dependencies: {  }
+name: 'WCAG 2.1'
+vid: wcag_2_1
+description: 'Recommendations from W3C for making web content more accessible'
+weight: 0

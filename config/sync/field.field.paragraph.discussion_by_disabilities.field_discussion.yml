@@ -1,0 +1,21 @@
+uuid: bd0446ef-c48c-4a0f-8076-462c780920eb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_discussion
+    - paragraphs.paragraphs_type.discussion_by_disabilities
+  module:
+    - text
+id: paragraph.discussion_by_disabilities.field_discussion
+field_name: field_discussion
+entity_type: paragraph
+bundle: discussion_by_disabilities
+label: Discussion
+description: 'Please explain how this technique might help the group of users you selected before'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

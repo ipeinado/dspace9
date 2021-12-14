@@ -1,0 +1,14 @@
+uuid: aa032673-5fec-45e9-9761-30e5c8a88bd0
+langcode: en
+status: true
+dependencies:
+  module:
+    - paragraphs_library
+third_party_settings:
+  paragraphs_library:
+    allow_library_conversion: true
+id: section
+label: Section
+icon_uuid: null
+description: 'Section of a document'
+behavior_plugins: {  }

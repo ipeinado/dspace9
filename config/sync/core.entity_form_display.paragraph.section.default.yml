@@ -1,0 +1,26 @@
+uuid: 613dac05-6e42-4225-a571-037c15193f3d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.section.field_body
+    - paragraphs.paragraphs_type.section
+  module:
+    - text
+id: paragraph.section.default
+targetEntityType: paragraph
+bundle: section
+mode: default
+content:
+  field_body:
+    weight: 0
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

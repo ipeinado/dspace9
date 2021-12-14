@@ -39,3 +39,64 @@
     color: $white;
   }
 }
+
+/******************************************************
+* ACCESSIBILITY MASTERLIST
+*******************************************************/
+
+#needs-filter {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.needs-filter-row {
+  display: block;
+  margin-bottom: (8px/15px)*1rem;
+}
+
+.count-characters {
+  color: #666;
+  font-weight: 600;
+}
+
+.needs-filter-cell {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.filter-button {
+  overflow: hidden;
+  margin-right: 0.5rem;
+  border: 1px solid $primary-light0E0;
+  border-radius: 3px;
+  width: 56px;
+  height: 56px;
+  cursor: pointer;
+  background-size: cover;
+}
+
+.filter-button:hover,
+.filter-button.selected {
+  border: 3px solid $brand-primary;
+}
+
+#blind-filter {
+  background-image: url('../images/masterlist_icons/blind_icon.png');
+}
+
+#lv-filter {
+  background-image: url('../images/masterlist_icons/low_vision_icon.png');
+}
+
+#cll-filter {
+  background-image: url('../images/masterlist_icons/cll_icon.png');
+}
+
+#phy-filter {
+  background-image: url('../images/masterlist_icons/phy_icon.png');
+}
+
+#dhoh-filter {
+  background-image: url('../images/masterlist_icons/deaf_icon.png');
+}
