@@ -1,0 +1,15 @@
+<?php
+
+function masterlist_theme($existing, $type, $theme, $path) {
+	return array(
+    'masterlist' => array(
+      'variables' => array(
+        'terms' => NULL,
+      ),
+    ),
+    'masterlist_toc' => array(
+      'variables' => array(
+      ),
+    ),
+  );
+}

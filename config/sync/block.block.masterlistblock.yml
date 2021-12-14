@@ -1,0 +1,25 @@
+uuid: c7a113ac-f2ef-44f4-a6b7-4a2b6db6b057
+langcode: en
+status: true
+dependencies:
+  module:
+    - masterlist
+    - system
+  theme:
+    - gpii_ds
+id: masterlistblock
+theme: gpii_ds
+region: sidebar_first
+weight: 0
+provider: null
+plugin: masterlist_block
+settings:
+  id: masterlist_block
+  label: 'Masterlist Block'
+  label_display: '0'
+  provider: masterlist
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /learn/masterlist

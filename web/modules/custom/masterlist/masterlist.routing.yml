@@ -1,0 +1,7 @@
+masterlist.content:
+  path: '/learn/masterlist'
+  defaults:
+    _controller: '\Drupal\masterlist\Controller\MasterlistController::content'
+    _title: 'Accessibility Masterlist'
+  requirements:
+    _permission: 'access content'

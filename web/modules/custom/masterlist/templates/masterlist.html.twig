@@ -1,0 +1,52 @@
+{% macro build_tree(terms, level, parent_level=NULL) %}
+  {% import _self as macros %}
+  {% set number = 0 %}
+    {% for term in terms %}
+      {% set number = number + 1 %}
+      {% if term.children is not empty %}
+        <li>
+          <h{{ level + 1}}>
+            <a class="anchor" id="technique-{{ term.tid }}">
+              {% if parent_level %}
+                {{ parent_level }}.
+              {% endif %}
+              {{ number }}. {{ term.name }}
+            </a>
+          </h{{ level + 1 }}>
+          <ul>
+            {{ macros.build_tree(term.children, level + 1, number) }}
+          </ul>
+        </li>
+      {% else %}
+        <li class="technique" data-needs="{{ term.needs|join(' ') }}">
+            <a id="technique-{{ term.tid }}" href="{{ path('entity.taxonomy_term.canonical', {'taxonomy_term': term.tid})}}" title="Read more about {{ term.name }}">{{ term.name }}</a>
+            {% if term.needs is defined and term.needs is not empty %}
+              <strong class="needs"> - {{ term.needs|join(', ') }}</strong>
+            {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+{% endmacro %}
+
+{{ attach_library('masterlist/masterlist_body') }}
+
+<p><i>Gregg Vanderheiden Ph.D., Editor</i></p>
+<p>This MasterList is designed to serve as a resource for researchers, developers, students, and others interested in understanding or developing products that incorporate one or more of these features.</p>
+<p>Each feature below has its own page with additional information which may include impact on different disabilities, open-source, free-trial, and commercial software that can be used to explore the feature, research that relates to the feature, and other resources.</p>
+<p>NOTE: There is a $50 reward for strategies that are missing (i.e. not be covered by one of those below), and $5 for each research paper reference that is added to the summary page for a strategy.</p>
+
+<p>Each feature or approach is tagged with applicable disabilities as follows:</p>
+<ul>
+<li><strong>B</strong> - Blindness (For our purposes, blindness is defined as no or very low vision - such that text cannot be read at any magnification)</li>
+<li><strong>LV</strong> - Low Vision</li>
+<li><strong>CLL</strong> - Cognitive, Language, and Learning Disabilities (including low literacy)</li>
+<li><strong>PHY</strong> - Physical Disabilities (includign seizure disorders)</li>
+<li><strong>D/HOH</strong> - Deaf and Hard of Hearing</li>
+</ul>
+<p>You can use the filter on the left  to filter the strategies based on specific disabilities</p>
+<div id="masterlist-help" class="alert alert-warning"></div>
+
+{% import _self as macros %}
+<ul class="masterlist">
+{{ macros.build_tree(terms, 1) }}
+</ul>

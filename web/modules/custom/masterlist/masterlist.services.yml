@@ -1,0 +1,4 @@
+services:
+  masterlist.masterlist_term_tree:
+    class: Drupal\masterlist\MasterlistTermTree
+    arguments: ['@entity_type.manager', '@database']

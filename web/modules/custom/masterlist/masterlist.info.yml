@@ -1,0 +1,12 @@
+name: Accessibility Masterlist
+description: 'Displays the masterlist page from the "Masterlist techniques" taxonomy'
+package: Custom
+
+type: module
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+dependencies:
+  - drupal:taxonomy
+  - drupal:paragraphs
+  - block

@@ -1,0 +1,16 @@
+masterlist_body:
+  version: VERSION
+  css:
+    theme:
+      css/masterlist-body.css: {}
+masterlist_toc:
+  version: VERSION
+  css:
+    theme:
+      css/masterlist-toc.css: {}
+  js:
+    js/masterlist-filters.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once

@@ -1,0 +1,28 @@
+{{ attach_library('masterlist/masterlist_toc') }}
+<div class="masterlist-filter-needs">
+  <div class="masterlist-filter-needs-header">
+    <h2>Filter by needs</h2>
+    <p class="filter-explanation">Each technique in the masterlist is marked with applicable disabilities. Use the following filter to only show techniques related to:</p>
+    <button id="needs-reset">Reset filter</button>
+  </div>
+  <div class="need-radio">
+    <input type="radio" id="blindness" name="needs" value="B" />
+    <label for="blindness">Blindness (<strong>B</strong>)</label>
+  </div>
+  <div class="need-radio">
+    <input type="radio" id="low-vision" name="needs" value="LV" />
+    <label for="low-vision">Low Vision (<strong>LV</strong>)</label>
+  </div>
+  <div class="need-radio">
+    <input type="radio" id="cognitive" name="needs" value="CLL" />
+    <label for="cognitive"> Cognitive, Language, and Learning Disabilities (including low literacy) (<strong>CLL</strong>)</label>
+  </div>
+  <div class="need-radio">
+    <input type="radio" id="physical" name="needs" value="PHY" />
+    <label for="physical">Physical Disabilities (<strong>PHY</strong>)</label>
+  </div>
+  <div class="need-radio">
+    <input type="radio" id="deaf" name="needs" value="D/HOH" />
+    <label for="deaf">Deaf and Hard of Hearing (<strong>D/HOH</strong>)</label>
+  </div>
+</div>

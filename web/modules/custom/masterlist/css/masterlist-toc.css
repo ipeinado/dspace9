@@ -1,0 +1,44 @@
+.masterlist-filter-needs {
+	margin-bottom: : 1rem;
+	padding: 1rem;
+	border-bottom: 1px solid #ccc;
+	background: linear-gradient(180deg, rgb(240, 240, 240), rgba(240, 240, 240, .8));
+	font-size: .875rem;
+}
+
+.masterlist-filter-needs-header {
+	margin-bottom: 2em;
+	position: relative;
+}
+
+.sidebar .masterlist-filter-needs-header h2 {
+	border-bottom: none;
+}
+
+.masterlist-filter-needs-header button {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.need-radio {
+	margin-bottom: 1rem;
+	display: flex;
+}
+
+.need-radio input[type="radio"] {
+	margin-right: 1em;
+}
+
+.technique-toc.active-toc {
+	color: #000;
+	background-color: rgba(255, 255, 0, .5);
+}
+
+#needs-reset {
+	padding: .3em;
+}
+
+p.filter-explanation {
+	color: #333;
+}
