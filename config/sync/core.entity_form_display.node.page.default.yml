@@ -35,27 +35,27 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_needs:
+    type: entity_reference_autocomplete
     weight: 26
+    region: content
     settings:
       match_operator: CONTAINS
       match_limit: 10
       size: 60
       placeholder: ''
     third_party_settings: {  }
-    type: entity_reference_autocomplete
-    region: content
   field_page_category:
-    weight: 1
-    settings: {  }
-    third_party_settings: {  }
     type: options_buttons
+    weight: 1
     region: content
-  field_techniques_from_masterlist:
-    weight: 2
     settings: {  }
     third_party_settings: {  }
+  field_techniques_from_masterlist:
     type: options_select
+    weight: 2
     region: content
+    settings: {  }
+    third_party_settings: {  }
   langcode:
     type: language_select
     weight: 3
@@ -71,24 +71,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 6
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 10
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 7
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield

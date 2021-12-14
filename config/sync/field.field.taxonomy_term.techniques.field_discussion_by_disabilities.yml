@@ -21,13 +21,13 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       discussion_by_disabilities: discussion_by_disabilities
+    negate: 0
     target_bundles_drag_drop:
       discussion_by_disabilities:
-        enabled: true
         weight: 4
+        enabled: true
       from_library:
         weight: 5
         enabled: false

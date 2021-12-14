@@ -5,6 +5,7 @@ dependencies: {  }
 id: local_development
 label: 'Local Development'
 description: 'Configuration useful for local development'
+weight: 0
 folder: ../config/development
 module:
   devel: 0
@@ -45,4 +46,3 @@ graylist:
   - search_api_solr.solr_request_handler.request_handler_tvrh_default_7_0_0
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

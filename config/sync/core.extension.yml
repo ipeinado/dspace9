@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   automated_cron: 0
   backup_migrate: 0
@@ -67,19 +69,16 @@ module:
   upgrade_status: 0
   user: 0
   views_ui: 0
-  extlink: 1
   ds: 1
+  extlink: 1
   ds_extras: 2
   views: 10
   paragraphs: 11
   fluidui: 400
 theme:
   seven: 0
-  bartik: 0
   stable: 0
   classy: 0
   bootstrap_barrio: 0
   gpii_ds: 0
 profile: standard
-_core:
-  default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc

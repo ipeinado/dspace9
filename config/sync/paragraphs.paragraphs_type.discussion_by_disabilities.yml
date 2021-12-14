@@ -10,5 +10,6 @@ third_party_settings:
 id: discussion_by_disabilities
 label: 'Discussion by Disabilities (Benefits and Preferred Behaviors)'
 icon_uuid: null
+icon_default: null
 description: 'Please state how this technique might benefit users with different behaviors'
 behavior_plugins: {  }

@@ -10,5 +10,6 @@ third_party_settings:
 id: section
 label: Section
 icon_uuid: null
+icon_default: null
 description: 'Section of a document'
 behavior_plugins: {  }

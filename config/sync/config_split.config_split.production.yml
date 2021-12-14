@@ -5,6 +5,7 @@ dependencies: {  }
 id: production
 label: Production
 description: 'Configuration for production'
+weight: 0
 folder: ../config/production
 module: {  }
 theme: {  }
@@ -13,4 +14,3 @@ blacklist:
 graylist: {  }
 graylist_dependents: true
 graylist_skip_equal: true
-weight: 0

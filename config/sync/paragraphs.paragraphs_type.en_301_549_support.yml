@@ -5,5 +5,6 @@ dependencies: {  }
 id: en_301_549_support
 label: 'EN 301 549 support'
 icon_uuid: null
+icon_default: null
 description: 'Describes the level of support to specific clauses of EN 301 549'
 behavior_plugins: {  }

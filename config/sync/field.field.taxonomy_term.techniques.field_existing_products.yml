@@ -21,17 +21,17 @@ default_value_callback: ''
 settings:
   handler: 'default:paragraph'
   handler_settings:
-    negate: 0
     target_bundles:
       section: section
+    negate: 0
     target_bundles_drag_drop:
-      section:
-        enabled: true
-        weight: 0
-      from_library:
-        weight: 2
-        enabled: false
       discussion_by_disabilities:
         weight: 4
         enabled: false
+      from_library:
+        weight: 2
+        enabled: false
+      section:
+        weight: 0
+        enabled: true
 field_type: entity_reference_revisions
