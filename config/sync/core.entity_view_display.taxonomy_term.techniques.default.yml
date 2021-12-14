@@ -14,13 +14,22 @@ dependencies:
 third_party_settings:
   ds:
     layout:
-      id: layout_onecol
-      library: layout_discovery/onecol
+      id: ds_1col
+      library: null
       disable_css: false
       entity_classes: all_classes
-      settings: {  }
+      settings:
+        classes:
+          layout_class: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
     regions:
-      content:
+      ds_content:
         - description
         - field_discussion_by_disabilities
         - field_existing_products
@@ -34,9 +43,16 @@ content:
     type: text_default
     label: hidden
     settings: {  }
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: minimal
+          settings:
+            lb: ''
+            lb-col: false
+            classes: {  }
     weight: 0
-    region: content
+    region: ds_content
   field_discussion_by_disabilities:
     type: entity_reference_revisions_entity_view
     label: above
@@ -61,20 +77,20 @@ content:
             ow-at: ''
             ow-def-at: false
             ow-def-cl: false
-            fis: true
+            fis: false
             fis-el: ''
             fis-cl: ''
             fis-at: ''
             fis-def-at: false
-            fi: true
+            fi: false
             fi-el: ''
             fi-cl: ''
             fi-at: ''
             fi-def-at: false
             prefix: ''
             suffix: ''
-    weight: 0
-    region: content
+    weight: 1
+    region: ds_content
   field_existing_products:
     type: entity_reference_revisions_entity_view
     label: above
@@ -110,8 +126,8 @@ content:
             fi-def-at: false
             prefix: ''
             suffix: ''
-    weight: 0
-    region: content
+    weight: 2
+    region: ds_content
   field_related_research:
     type: entity_reference_revisions_entity_view
     label: above
@@ -147,8 +163,8 @@ content:
             fi-def-at: false
             prefix: ''
             suffix: ''
-    weight: 0
-    region: content
+    weight: 3
+    region: ds_content
 hidden:
   langcode: true
   search_api_excerpt: true

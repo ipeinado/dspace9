@@ -1,0 +1,5 @@
+field_template: true
+ft-default: expert
+ft-show-colon: false
+ft-layout-builder: false
+use_field_names: false
