@@ -19,8 +19,66 @@ dependencies:
     - field.field.node.bb.field_updated_at
     - node.type.bb
   module:
+    - datetime
+    - ds
+    - link
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: barrio_cardbasic
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      first:
+        - node_title
+        - body
+        - field_forks_count
+        - field_pushed_at
+        - field_stargazers_count
+        - field_component_owner
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          'link class': ''
+          wrapper: h3
+          class: ''
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
 id: node.bb.teaser
 targetEntityType: node
 bundle: bb
@@ -31,26 +89,113 @@ content:
     label: hidden
     settings:
       trim_length: 600
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: true
+            fis-el: p
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: ''
+            suffix: ''
+    weight: 2
+    region: first
+  field_component_owner:
+    type: link_separate
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
     third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
-    settings: {  }
+    weight: 4
+    region: first
+  field_forks_count:
+    type: number_integer
+    label: hidden
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: false
+            fi-el: ''
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: forks
+            suffix: ''
+    weight: 2
+    region: first
+  field_pushed_at:
+    type: datetime_custom
+    label: above
+    settings:
+      timezone_override: ''
+      date_format: 'Y-m-d\TH:i:s'
     third_party_settings: {  }
-    weight: 100
-    region: content
+    weight: 3
+    region: first
+  field_stargazers_count:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 4
+    region: first
 hidden:
-  field_component_owner: true
   field_component_topics: true
   field_component_url: true
   field_en_301_549_support: true
-  field_forks_count: true
   field_license: true
   field_main_functionality: true
-  field_pushed_at: true
   field_repo_id: true
-  field_stargazers_count: true
   field_techniques_from_masterlist: true
   field_updated_at: true
   langcode: true
+  links: true
   search_api_excerpt: true

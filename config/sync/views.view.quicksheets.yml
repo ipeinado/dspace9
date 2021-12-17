@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - node.type.page
   module:
+    - datetime
     - node
     - user
 id: quicksheets
@@ -72,23 +73,10 @@ display:
           separator: ', '
           field_api_classes: false
       pager:
-        type: mini
+        type: some
         options:
           offset: 0
-          items_per_page: 10
-          total_pages: null
-          id: 0
-          tags:
-            next: ››
-            previous: ‹‹
-          expose:
-            items_per_page: false
-            items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
-            offset: false
-            offset_label: Offset
+          items_per_page: 3
       exposed_form:
         type: basic
         options:
@@ -124,6 +112,13 @@ display:
             field_identifier: created
           exposed: false
           granularity: second
+        field_pushed_at_value:
+          id: field_pushed_at_value
+          table: node__field_pushed_at
+          field: field_pushed_at_value
+          plugin_id: datetime
+          expose:
+            field_identifier: field_pushed_at_value
       arguments: {  }
       filters:
         status:
@@ -156,6 +151,7 @@ display:
       row:
         type: 'entity:node'
         options:
+          relationship: none
           view_mode: teaser
       query:
         type: views_query
@@ -168,12 +164,12 @@ display:
       relationships: {  }
       header: {  }
       footer: {  }
+      display_extenders: {  }
     cache_metadata:
       max-age: -1
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }
@@ -190,7 +186,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url.query_args
         - 'user.node_grants:view'
         - user.permissions
       tags: {  }

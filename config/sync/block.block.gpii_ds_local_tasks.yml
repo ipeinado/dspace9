@@ -2,6 +2,8 @@ uuid: 17b4d156-df02-4ade-8ce8-e17987141908
 langcode: en
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - gpii_ds
 _core:
@@ -19,4 +21,8 @@ settings:
   provider: core
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    pages: '<front>'

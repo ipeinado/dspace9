@@ -1,0 +1,30 @@
+uuid: 55722e34-c68e-4330-b772-0c3a4090b113
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2639ff02-791a-424e-b5e7-f73cc6237748'
+  module:
+    - block_content
+    - system
+  theme:
+    - gpii_ds
+id: welcomeblock
+theme: gpii_ds
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:2639ff02-791a-424e-b5e7-f73cc6237748'
+settings:
+  id: 'block_content:2639ff02-791a-424e-b5e7-f73cc6237748'
+  label: 'Welcome Block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

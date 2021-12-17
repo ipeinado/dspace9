@@ -1,0 +1,29 @@
+uuid: ec09422d-7d20-4f0a-85f1-9efbe7082f93
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.unpublished_components
+  module:
+    - system
+    - views
+  theme:
+    - gpii_ds
+id: views_block__unpublished_components_block_1
+theme: gpii_ds
+region: content
+weight: 1
+provider: null
+plugin: 'views_block:unpublished_components-block_1'
+settings:
+  id: 'views_block:unpublished_components-block_1'
+  label: Components
+  label_display: visible
+  provider: views
+  views_label: Components
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'
