@@ -177,3 +177,59 @@
 #dhoh-filter {
   background-image: url('../images/masterlist_icons/deaf_icon.png');
 }
+
+.view-unpublished-components {
+  .row {
+    // background-color: orange;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2em;
+
+    @include media-breakpoint-up(xl) {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+  }
+  
+}
+
+.component-card {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  // border-bottom: 1px solid rgb(36, 41, 47);
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .component-card-footer-item {
+    margin-right: 1em;
+    font-size: 0.9em;
+    color: rgb(87, 96, 106);
+  }
+
+  @include media-breakpoint-down(xl) {
+    border-bottom: 1px solid rgb(36, 41, 47);
+
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 32%;
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, .1), 0 0 4px 0 rgba(0, 0, 0, .1);
+
+    .field-content {
+      height: 5rem;
+      border-bottom: 1px solid rgb(224, 224, 224);
+      overflow: hidden;
+      margin-bottom: .5em;
+    }
+  }
+
+}
+

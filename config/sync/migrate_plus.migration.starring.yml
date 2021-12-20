@@ -1,4 +1,4 @@
-uuid: 4ffe3d2e-3fcb-4a71-858a-3d0e49fef560
+uuid: b9b06953-2046-44a5-93dd-082b425980f7
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - github_repo_importer
 _core:
-  default_config_hash: eZkqfJ-Ju9D2wI7kTQuTdwGtxoO_1mCxhllUHDr3NvY
+  default_config_hash: o2WH2GHcArEj5CBsMWkplhvFDwr0qy1iBYjX2ZupyJU
 id: starring
 class: null
 field_plugin_method: null
@@ -149,4 +149,5 @@ destination:
     - field_pushed_at
     - field_forks_count
     - field_topics
+    - field_language
 migration_dependencies: null

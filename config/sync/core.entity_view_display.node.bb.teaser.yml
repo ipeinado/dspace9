@@ -10,6 +10,7 @@ dependencies:
     - field.field.node.bb.field_component_url
     - field.field.node.bb.field_en_301_549_support
     - field.field.node.bb.field_forks_count
+    - field.field.node.bb.field_language
     - field.field.node.bb.field_license
     - field.field.node.bb.field_main_functionality
     - field.field.node.bb.field_pushed_at
@@ -218,6 +219,7 @@ hidden:
   field_component_topics: true
   field_component_url: true
   field_en_301_549_support: true
+  field_language: true
   field_license: true
   field_main_functionality: true
   field_repo_id: true

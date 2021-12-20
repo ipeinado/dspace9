@@ -89,6 +89,7 @@ destination:
     - field_pushed_at
     - field_forks_count
     - field_topics
+    - field_language
 
 process:
   nid: id
