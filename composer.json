@@ -30,6 +30,7 @@
         "drupal/extlink": "^1.6",
         "drupal/field_group": "^3.2",
         "drupal/fluidui": "^1.8",
+        "drupal/fontawesome": "^2.19",
         "drupal/hacked": "^2.0@beta",
         "drupal/jquery_ui_accordion": "^1.1",
         "drupal/migrate_api": "^1.2",

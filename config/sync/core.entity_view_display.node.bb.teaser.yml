@@ -85,10 +85,9 @@ bundle: bb
 mode: teaser
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_default
     label: hidden
-    settings:
-      trim_length: 600
+    settings: {  }
     third_party_settings:
       ds:
         ft:
@@ -106,7 +105,7 @@ content:
             ow-at: ''
             ow-def-at: false
             ow-def-cl: false
-            fis: true
+            fis: false
             fis-el: p
             fis-cl: ''
             fis-at: ''
@@ -160,12 +159,12 @@ content:
             fis-cl: ''
             fis-at: ''
             fis-def-at: false
-            fi: false
-            fi-el: ''
+            fi: true
+            fi-el: span
             fi-cl: ''
             fi-at: ''
             fi-def-at: false
-            prefix: forks
+            prefix: '<i class="fas fa-code-branch" aria-label="number of forks"></i>'
             suffix: ''
     weight: 2
     region: first
@@ -180,11 +179,39 @@ content:
     region: first
   field_stargazers_count:
     type: number_integer
-    label: above
+    label: hidden
     settings:
       thousand_separator: ''
       prefix_suffix: true
-    third_party_settings: {  }
+    third_party_settings:
+      ds:
+        ft:
+          id: expert
+          settings:
+            lb: ''
+            lbw: false
+            lbw-el: ''
+            lbw-cl: ''
+            lbw-at: ''
+            lb-col: false
+            ow: false
+            ow-el: ''
+            ow-cl: ''
+            ow-at: ''
+            ow-def-at: false
+            ow-def-cl: false
+            fis: false
+            fis-el: ''
+            fis-cl: ''
+            fis-at: ''
+            fis-def-at: false
+            fi: true
+            fi-el: span
+            fi-cl: ''
+            fi-at: ''
+            fi-def-at: false
+            prefix: '<i class="far fa-star"></i>'
+            suffix: ''
     weight: 4
     region: first
 hidden:

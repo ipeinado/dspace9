@@ -94,9 +94,6 @@ process:
   nid: id
   title: name
   
-  'body/format':
-    plugin: default_value
-    default_value: 'markdown'
   'body/summary': description
   'body/value': description
     # -

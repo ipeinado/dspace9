@@ -1,4 +1,4 @@
-uuid: 51fea070-7874-4dfb-8a80-85db10163cb4
+uuid: 4ffe3d2e-3fcb-4a71-858a-3d0e49fef560
 langcode: en
 status: true
 dependencies:
@@ -6,7 +6,7 @@ dependencies:
     module:
       - github_repo_importer
 _core:
-  default_config_hash: l3hT6SncgvdqLrklopwMHKtCtLM5zK3TaIJ8Nrg9LKo
+  default_config_hash: eZkqfJ-Ju9D2wI7kTQuTdwGtxoO_1mCxhllUHDr3NvY
 id: starring
 class: null
 field_plugin_method: null
@@ -85,9 +85,6 @@ source:
 process:
   nid: id
   title: name
-  body/format:
-    plugin: default_value
-    default_value: markdown
   body/summary: description
   body/value: description
   field_stargazers_count: stars
