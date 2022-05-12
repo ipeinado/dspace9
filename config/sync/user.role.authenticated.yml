@@ -1,7 +1,11 @@
 uuid: 97011e2f-9303-4d4f-baa2-3ebc6684545d
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - comment
+    - fontawesome
+    - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
@@ -14,6 +18,7 @@ permissions:
   - 'access environment indicator'
   - 'access environment indicator default_environment'
   - 'access environment indicator overwritten_environment'
+  - 'access fontawesome additional settings'
   - 'access navbar'
   - 'access printer-friendly version'
   - 'access search search_api_page'
